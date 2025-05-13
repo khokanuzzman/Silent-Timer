@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Silent Timer</string>
+    <string name="shortcut_add_short">Add Schedule</string>
+    <string name="shortcut_add_long">Create a new silent schedule</string>
+    <string name="shortcut_silent_short">Silent Now</string>
+    <string name="shortcut_silent_long">Activate silent mode now</string>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <shortcut
+        android:shortcutId="add_schedule"
+        android:enabled="true"
+        android:icon="@drawable/ic_notification"
+        android:shortcutShortLabel="@string/shortcut_add_short"
+        android:shortcutLongLabel="@string/shortcut_add_long"
+        tools:targetApi="25">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.example.silenttimer"
+            android:targetClass="com.example.silenttimer.MainActivity" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="activate_now"
+        android:enabled="true"
+        android:icon="@drawable/ic_notification"
+        android:shortcutShortLabel="@string/shortcut_silent_short"
+        android:shortcutLongLabel="@string/shortcut_silent_long"
+        tools:targetApi="25">
+        <intent
+            android:action="com.example.silenttimer.SILENT_NOW"
+            android:targetPackage="com.example.silenttimer"
+            android:targetClass="com.example.silenttimer.alarm.SilentNowActivity" />
+    </shortcut>
+</shortcuts>
